@@ -1,0 +1,26 @@
+#web framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+#langchain and related packages
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-google-genai
+
+#vectorDb
+pinecone
+
+#PDF and environment handling
+PyPDF 
+python-dotenv
+
+#Typing and utilities
+pydantic
+tqdm
+requests
+
+#for Logging
+loguru
