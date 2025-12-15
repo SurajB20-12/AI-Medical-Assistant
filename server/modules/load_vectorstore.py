@@ -50,7 +50,7 @@ if PINECONE_INDEX_NAME not in existing_indexes:
 index=pc.Index(PINECONE_INDEX_NAME)
 
 def load_vectorstore(uploaded_doc):
-  embed_model=GoogleGenerativeAIEmbeddings(model="model/text-embedding-004")
+  embed_model=GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
   file_path=[]
 
   for file in uploaded_doc:
@@ -82,7 +82,7 @@ def load_vectorstore(uploaded_doc):
        progress.update(len(embeddings))
 
     print(f"Completed uploading vectors for {file_path}")
-    
+
 
 
 
